@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota dos Sonhos - Agência de Viagens</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-compass"></i>
+                    <span>Rota dos Sonhos</span>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#pacotes">Pacotes</a></li>
+                        <li><a href="#destinos">Destinos</a></li>
+                        <li><a href="#agendamento">Agende sua viagem</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Descubra o mundo com a gente</h1>
+            <p>Experiências únicas e inesquecíveis te aguardam. Explore destinos incríveis com total segurança e conforto.</p>
+            <button class="cta-button">
+                <i class="fas fa-plane"></i>
+                Explore Agora
+            </button>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Pacotes Mais Vendidos -->
+    <section class="packages" id="pacotes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pacotes Mais Vendidos</h2>
+                <p>Destinos incríveis com preços especiais para você</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="./img/Santorini, Grécia.jpg" alt="Santorini">
+                        <div class="package-badge">Mais Vendido</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Santorini, Grécia</h3>
+                        <p>7 dias de pura magia no mar Egeu</p>
+                        <div class="package-price">
+                            <span class="price">R$ 4.999</span>
+                            <span class="installments">12x sem juros</span>
+                        </div>
+                        <button class="package-btn" data-package="santorini">Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="./img/Bali, Indonésia1.jpg" alt="Bali">
+                    </div>
+                    <div class="package-content">
+                        <h3>Bali, Indonésia</h3>
+                        <p>10 dias em paraíso tropical</p>
+                        <div class="package-price">
+                            <span class="price">R$ 3.599</span>
+                            <span class="installments">10x sem juros</span>
+                        </div>
+                        <button class="package-btn" data-package="bali">Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="./img/Dubai.jpg" alt="Dubai">
+                    </div>
+                    <div class="package-content">
+                        <h3>Dubai, Emirados Árabes</h3>
+                        <p>5 dias de luxo e modernidade</p>
+                        <div class="package-price">
+                            <span class="price">R$ 5.799</span>
+                            <span class="installments">15x sem juros</span>
+                        </div>
+                        <button class="package-btn" data-package="dubai">Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="./img/Fernando de Noronha.jpg" alt="Fernando de Noronha">
+                    </div>
+                    <div class="package-content">
+                        <h3>Fernando de Noronha</h3>
+                        <p>6 dias no paraíso brasileiro</p>
+                        <div class="package-price">
+                            <span class="price">R$ 2.899</span>
+                            <span class="installments">8x sem juros</span>
+                        </div>
+                        <button class="package-btn" data-package="noronha">Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="./img/Roma, Itália.jpg" alt="Roma">
+                    </div>
+                    <div class="package-content">
+                        <h3>Roma, Itália</h3>
+                        <p>8 dias entre história e cultura</p>
+                        <div class="package-price">
+                            <span class="price">R$ 4.299</span>
+                            <span class="installments">12x sem juros</span>
+                        </div>
+                        <button class="package-btn" data-package="roma">Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="./img/Maldivas.jpg" alt="Maldivas">
+                    </div>
+                    <div class="package-content">
+                        <h3>Maldivas</h3>
+                        <p>9 dias em overwater bungalows</p>
+                        <div class="package-price">
+                            <span class="price">R$ 8.999</span>
+                            <span class="installments">18x sem juros</span>
+                        </div>
+                        <button class="package-btn" data-package="maldivas">Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="./img/Japão.jpg" alt="Japão">
+                    </div>
+                    <div class="package-content">
+                        <h3>Japão</h3>
+                        <p>12 dias entre tradição e modernidade</p>
+                        <div class="package-price">
+                            <span class="price">R$ 6.799</span>
+                            <span class="installments">15x sem juros</span>
+                        </div>
+                        <button class="package-btn" data-package="japao">Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="./img/islandia.jpg" alt="Islândia">
+                    </div>
+                    <div class="package-content">
+                        <h3>Islândia</h3>
+                        <p>10 dias de aventura nórdica</p>
+                        <div class="package-price">
+                            <span class="price">R$ 5.599</span>
+                            <span class="installments">12x sem juros</span>
+                        </div>
+                        <button class="package-btn" data-package="islandia">Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="./img/egito.jpg" alt="Egito">
+                    </div>
+                    <div class="package-content">
+                        <h3>Egito</h3>
+                        <p>9 dias descobrindo tesouros antigos</p>
+                        <div class="package-price">
+                            <span class="price">R$ 4.799</span>
+                            <span class="installments">12x sem juros</span>
+                        </div>
+                        <button class="package-btn" data-package="egito">Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="./img/tailandia.jpg" alt="Tailândia">
+                    </div>
+                    <div class="package-content">
+                        <h3>Tailândia</h3>
+                        <p>11 dias de praias e templos</p>
+                        <div class="package-price">
+                            <span class="price">R$ 3.899</span>
+                            <span class="installments">10x sem juros</span>
+                        </div>
+                        <button class="package-btn" data-package="tailandia">Ver mais</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="./img/pantagonia.jpg" alt="Patagônia">
+                    </div>
+                    <div class="package-content">
+                        <h3>Patagônia</h3>
+                        <p>14 dias de aventura selvagem</p>
+                        <div class="package-price">
+                            <span class="price">R$ 5.299</span>
+                            <span class="installments">12x sem juros</span>
+                        </div>
+                        <button class="package-btn" data-package="patagonia">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="packages-actions">
+                <button class="load-more-btn" id="loadMorePackages">
+                    <i class="fas fa-plus"></i>
+                    Carregar Mais Pacotes
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Pacote -->
+    <div class="modal-overlay" id="packageModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <button class="modal-close" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <div class="modal-price">
+                        <span class="modal-price-value" id="modalPrice"></span>
+                        <span class="modal-installments" id="modalInstallments"></span>
+                    </div>
+                    <div class="modal-description" id="modalDescription"></div>
+                    <div class="modal-includes">
+                        <h3><i class="fas fa-check-circle"></i> O que está incluso:</h3>
+                        <ul id="modalIncludes"></ul>
+                    </div>
+                    <div class="modal-itinerary">
+                        <h3><i class="fas fa-map-marked-alt"></i> Roteiro:</h3>
+                        <div id="modalItinerary"></div>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="modal-btn primary" id="reserveNow">
+                            <i class="fas fa-calendar-check"></i>
+                            Reservar Agora
+                        </button>
+                        <button class="modal-btn secondary" id="contactAgent">
+                            <i class="fas fa-headset"></i>
+                            Falar com Agente
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulário de Agendamento -->
+    <section class="booking" id="agendamento">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-content">
+                    <h2>Planeje sua próxima aventura</h2>
+                    <p>Conte-nos seus sonhos e criaremos a viagem perfeita para você</p>
+                    <div class="booking-features">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Segurança garantida</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <span>Suporte 24h</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-medal"></i>
+                            <span>Melhores preços</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-form">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="destino">Destino desejado</label>
+                            <select id="destino" name="destino" required>
+                                <option value="">Selecione um destino</option>
+                                <option value="europa">Europa</option>
+                                <option value="asia">Ásia</option>
+                                <option value="america">América</option>
+                                <option value="oceania">Oceania</option>
+                                <option value="africa">África</option>
+                                <option value="brasil">Brasil</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkin">Data de ida</label>
+                                <input type="date" id="checkin" name="checkin" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout">Data de volta</label>
+                                <input type="date" id="checkout" name="checkout" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contato">WhatsApp</label>
+                            <input type="tel" id="contato" name="contato" placeholder="(11) 99999-9999" required>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Solicitar Orçamento
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que nossos clientes dizem</h2>
+                <p>Experiências reais de quem já viajou conosco</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="./img/perfil2.jpg" alt="Ana Silva">
+                        <div class="testimonial-info">
+                            <h4>Ana Silva</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Viagem incrível para Santorini! O atendimento foi excepcional e todos os detalhes foram cuidadosamente planejados. Recomendo muito!"</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="./img/perfil2.jpg" alt="Carlos Mendes">
+                        <div class="testimonial-info">
+                            <h4>Carlos Mendes</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Dubai foi um sonho realizado! A equipe da Rota dos Sonhos cuidou de tudo, desde o voo até os passeios. Experiência nota 10!"</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="./img/perfil.jpg" alt="Marina Costa">
+                        <div class="testimonial-info">
+                            <h4>Marina Costa</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Bali superou todas as expectativas! Lugares paradisíacos e um atendimento humanizado. Já estou planejando a próxima viagem!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-compass"></i>
+                        <span>Rota dos Sonhos</span>
+                    </div>
+                    <p>Transformando sonhos em realidade desde 2015. Sua próxima aventura começa aqui!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (11) 3456-7890</p>
+                        <p><i class="fab fa-whatsapp"></i> (11) 99999-9999</p>
+                        <p><i class="fas fa-envelope"></i> contato@rotadossonhos.com.br</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - São Paulo/SP</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Cancelamento</a></li>
+                        <li><a href="#">Seguro Viagem</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Receba ofertas exclusivas e dicas de viagem</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu melhor e-mail">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rota dos Sonhos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
